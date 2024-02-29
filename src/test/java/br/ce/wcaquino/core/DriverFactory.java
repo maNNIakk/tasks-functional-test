@@ -1,20 +1,21 @@
 package br.ce.wcaquino.core;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.logging.LogEntries;
 import org.openqa.selenium.logging.LogEntry;
 import org.openqa.selenium.logging.LogType;
 import org.openqa.selenium.logging.LoggingPreferences;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.logging.Level;
 
 public class DriverFactory {
-    public static WebDriver driver;
+    public static RemoteWebDriver driver;
 
-    public static WebDriver getDriver() {
+    public static RemoteWebDriver getDriver() {
         if (driver == null) {
             setupDriver();
         }
@@ -26,7 +27,12 @@ public class DriverFactory {
         configureLogging(options);
 
         WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver(options);
+        try {
+            driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),
+                    options);
+        } catch (MalformedURLException e) {
+            throw new RuntimeException(e);
+        }
         driver.manage().window().maximize();
     }
 
@@ -36,6 +42,7 @@ public class DriverFactory {
         options.setCapability("goog:loggingPrefs", logs);
     }
 
+    @SuppressWarnings("Vou usar no futuro")
     public static void printHttpXhrLogs() {
         if (driver != null) {
             // Get and print only HTTP/XHR logs
@@ -58,5 +65,9 @@ public class DriverFactory {
             driver.quit();
             driver = null; // Reset driver after quitting
         }
+    }
+
+    public static String getTestName() {
+        return new Object(){}.getClass().getEnclosingMethod().getName();
     }
 }

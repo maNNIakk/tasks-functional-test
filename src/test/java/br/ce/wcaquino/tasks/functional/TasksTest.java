@@ -3,10 +3,6 @@ package br.ce.wcaquino.tasks.functional;
 import br.ce.wcaquino.core.DriverFactory;
 import org.junit.*;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-
-
-import java.sql.Driver;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Random;
@@ -18,13 +14,13 @@ public class TasksTest {
 
     @Before
     public void setup(){
-       DriverFactory.setupDriver();
+       DriverFactory.getDriver();
     }
 
     @Test
     public void deveSalvarTarefaComSucesso()  {
 
-        driver.navigate().to("http://localhost:8001/tasks/");
+        driver.navigate().to("http://host.docker.internal:8001/tasks/");
         Assert.assertTrue(driver.findElement(By.xpath("//h1[text()='Tasks']")).getText().contains("Tasks"));
         driver.findElement(By.id("addTodo")).click();
         Assert.assertTrue(driver.getCurrentUrl().contains("add"));
@@ -39,7 +35,7 @@ public class TasksTest {
 
     @Test
     public void deveFalharAoSalvarComDataPassada(){
-        driver.navigate().to("http://localhost:8001/tasks/");
+        driver.navigate().to("http://host.docker.internal:8001/tasks/");
         Assert.assertTrue(driver.findElement(By.xpath("//h1[text()='Tasks']")).getText().contains("Tasks"));
         driver.findElement(By.id("addTodo")).click();
         Assert.assertTrue(driver.getCurrentUrl().contains("add"));
@@ -54,7 +50,7 @@ public class TasksTest {
 
     @Test
     public void deveFalharAoSalvarSemDescricao(){
-        driver.navigate().to("http://localhost:8001/tasks/");
+        driver.navigate().to("http://host.docker.internal:8001/tasks/");
         Assert.assertTrue(driver.findElement(By.xpath("//h1[text()='Tasks']")).getText().contains("Tasks"));
         driver.findElement(By.id("addTodo")).click();
         Assert.assertTrue(driver.getCurrentUrl().contains("add"));
@@ -66,8 +62,9 @@ public class TasksTest {
     }
 
     @After
-    public void tearDown(){
-
+    public void tearDown() {
         DriverFactory.killDriver();
     }
+
+
 }
