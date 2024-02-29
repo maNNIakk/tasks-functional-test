@@ -27,3 +27,6 @@ j
 :src/main/java/br/ce/wcaquino/tasksfrontend/model/Todo.java,9\f\9feae501d666ca6b842ac01c03da611960e1efde
 z
 Jsrc/main/java/br/ce/wcaquino/tasksfrontend/controller/TasksController.java,9\9\99e040c46b8ece800cd4b8d0b6bfe9944ee1ed75
+:
+
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302

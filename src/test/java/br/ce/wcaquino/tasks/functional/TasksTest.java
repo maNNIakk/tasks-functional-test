@@ -67,7 +67,7 @@ public class TasksTest {
 
     @After
     public void tearDown(){
-        DriverFactory.printHttpXhrLogs();
+
         DriverFactory.killDriver();
     }
 }

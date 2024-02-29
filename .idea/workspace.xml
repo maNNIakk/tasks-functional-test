@@ -5,11 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25435980-1bfb-4bd0-9bcf-1261966c2cc1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/ce/wcaquino/tasks/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/br/ce/wcaquino/core/DriverFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/br/ce/wcaquino/tasks/functional/TasksTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../tasks-api-test/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tasks-api-test/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../tasks-api-test/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tasks-api-test/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../tasks-api-test/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../tasks-api-test/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
