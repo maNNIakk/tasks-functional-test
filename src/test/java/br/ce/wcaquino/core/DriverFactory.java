@@ -22,19 +22,21 @@ public class DriverFactory {
         return driver;
     }
 
+
     public static void setupDriver() {
         ChromeOptions options = new ChromeOptions();
         configureLogging(options);
 
         WebDriverManager.chromedriver().setup();
         try {
-            driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),
-                    options);
+            driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), options);
         } catch (MalformedURLException e) {
             throw new RuntimeException(e);
         }
         driver.manage().window().maximize();
     }
+
+
 
     public static void configureLogging(ChromeOptions options) {
         LoggingPreferences logs = new LoggingPreferences();

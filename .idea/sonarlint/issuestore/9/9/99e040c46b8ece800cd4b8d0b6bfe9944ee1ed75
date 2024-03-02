@@ -1,8 +1,0 @@
-
-a
-java:S1192&"FDefine a constant instead of duplicating this literal "index" 3 times.(¦œû×ÿÿÿÿÿ
-\
-java:S1192#"FDefine a constant instead of duplicating this literal "todos" 3 times.(´Ñ±Ò
-k	java:S116"WRename this field "BACKEND_HOST" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÈÔ¿
-q	java:S116"WRename this field "BACKEND_PORT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ì½¶÷ÿÿÿÿÿ
-l	java:S116"RRename this field "VERSION" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡·æäüÿÿÿÿ

@@ -5,16 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25435980-1bfb-4bd0-9bcf-1261966c2cc1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/br/ce/wcaquino/tasks/prod/HealthCheckIT.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../tasks-api-test/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tasks-api-test/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../tasks-api-test/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tasks-api-test/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../tasks-api-test/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../tasks-api-test/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../tasks-api-test/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../tasks-api-test/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../tasks-api-test/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tasks-api-test/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/8/585acf4b6fc2fe795154a3804383fca80dc4008d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/5/656b308886d8d4e22b6a7ee10ddf356a004736ce" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/2/8206115fa5cfcf95453017b872b8e5d497c4436e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/9/99e040c46b8ece800cd4b8d0b6bfe9944ee1ed75" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/f/9feae501d666ca6b842ac01c03da611960e1efde" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/1/a154a5c9824bc4fff671d0d396a5ba9cde1b42ad" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/6/c655f9dd8b17a8a8a1087ff842dbb9d71be70c14" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/3/d33042424ab785196fa3ff7358d35116d96d9b32" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/9/d9202ceb42e58a5c28079ddaf938fd6efb41d207" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/5/8/585acf4b6fc2fe795154a3804383fca80dc4008d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/5/656b308886d8d4e22b6a7ee10ddf356a004736ce" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/2/8206115fa5cfcf95453017b872b8e5d497c4436e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/9/99e040c46b8ece800cd4b8d0b6bfe9944ee1ed75" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/f/9feae501d666ca6b842ac01c03da611960e1efde" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/1/a154a5c9824bc4fff671d0d396a5ba9cde1b42ad" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/6/c655f9dd8b17a8a8a1087ff842dbb9d71be70c14" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/d/3/d33042424ab785196fa3ff7358d35116d96d9b32" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/d/9/d9202ceb42e58a5c28079ddaf938fd6efb41d207" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/br/ce/wcaquino/core/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/ce/wcaquino/core/DriverFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/br/ce/wcaquino/tasks/functional/TasksTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/ce/wcaquino/tasks/functional/TasksTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +71,38 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.HealthCheckIT">
+    <configuration name="HealthCheckIT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tasks-functional-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.ce.wcaquino.tasks.prod.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.ce.wcaquino.tasks.prod" />
+      <option name="MAIN_CLASS_NAME" value="br.ce.wcaquino.tasks.prod.HealthCheckIT" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HealthCheckIT.healthCheck" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tasks-functional-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.ce.wcaquino.tasks.prod.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.ce.wcaquino.tasks.prod" />
+      <option name="MAIN_CLASS_NAME" value="br.ce.wcaquino.tasks.prod.HealthCheckIT" />
+      <option name="METHOD_NAME" value="healthCheck" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TasksTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tasks-functional-test" />
       <extension name="coverage">
@@ -70,7 +120,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HealthCheckIT" />
         <item itemvalue="JUnit.TasksTest" />
+        <item itemvalue="JUnit.HealthCheckIT.healthCheck" />
       </list>
     </recent_temporary>
   </component>
