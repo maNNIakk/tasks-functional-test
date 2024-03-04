@@ -16,3 +16,13 @@ j
 :src/test/java/br/ce/wcaquino/tasks/prod/HealthCheckIT.java,1\9\1954c55c74baa4f6aa374e92d0200b89263e59cd
 B
 docker-compose.yml,3\5\35b8c13cf2eb2a194eada000eb310d65aed53b2a
+g
+7src/test/java/br/ce/wcaquino/tasks/apitest/APITest.java,e\4\e4148d8791ec1608409d9b55b60f8afd6dfee019
+w
+Gsrc/main/java/br/ce/wcaquino/taskbackend/controller/TaskController.java,d\9\d9202ceb42e58a5c28079ddaf938fd6efb41d207
+k
+;src/main/java/br/ce/wcaquino/taskbackend/repo/TaskRepo.java,c\6\c655f9dd8b17a8a8a1087ff842dbb9d71be70c14
+h
+8src/main/java/br/ce/wcaquino/taskbackend/model/Task.java,8\2\8206115fa5cfcf95453017b872b8e5d497c4436e
+w
+Gsrc/main/java/br/ce/wcaquino/taskbackend/controller/RootController.java,6\5\656b308886d8d4e22b6a7ee10ddf356a004736ce
