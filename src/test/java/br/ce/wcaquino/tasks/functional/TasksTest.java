@@ -61,6 +61,28 @@ public class TasksTest {
 
     }
 
+    @Test
+    public void deveRemoverTarefaComSucesso(){
+        driver.navigate().to("http://host.docker.internal:8001/tasks/");
+
+        Assert.assertTrue(driver.findElement(By.xpath("//h1[text()='Tasks']")).getText().contains("Tasks"));
+        driver.findElement(By.id("addTodo")).click();
+        Assert.assertTrue(driver.getCurrentUrl().contains("add"));
+        driver.findElement(By.id("task")).sendKeys("Task para ser removida " +
+                "pelo Selenium");
+        driver.findElement(By.id("dueDate")).sendKeys(LocalDate.now().plusDays(new Random().nextInt(30) + 3).format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
+        driver.findElement(By.id("saveButton")).click();
+        Assert.assertEquals("Sucess!",
+                driver.findElement(By.id("message")).getText());
+
+        driver.findElement(By.xpath("//a[@class='btn btn-outline-danger " +
+                "btn-sm']")).click();
+        Assert.assertEquals("Sucess!",
+                driver.findElement(By.id("message")).getText());
+
+
+    }
+
     @After
     public void tearDown() {
         DriverFactory.killDriver();
